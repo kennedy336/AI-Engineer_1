@@ -1,14 +1,10 @@
-# Start your code here!
 import os
 from openai import OpenAI
 
-# Define the model to use
 model = "gpt-4o-mini"
 
-# Define the client
 client = OpenAI()
 
-# Start coding here
 conversation = [{"role": "system", "content": "You are a helpful travel guide for the culturally rich city of Paris."}]
 
 questions = ["How far away is the Louvre from the Eiffel Tower (in miles) if you are driving?",
@@ -26,4 +22,3 @@ for question in questions:
 
     print(f"User: {question}")
     print(f"Assistant: {answer}")
-# Add as many cells as you like
